@@ -1,0 +1,1337 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+demo_padding {
+line-height: 30px;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:scroll;
+}
+.getiao_xsd {
+float: left;
+width: 995px;
+display: inline;
+}
+.getiao_wz {
+width: 75px;
+float: left;
+margin-top: 0px;
+margin-left: 0px;
+display: inline;
+}
+.getiao_percent {
+width: 38px;
+float: left;
+margin-top: 0px;
+margin-left: 5px;
+display: inline;
+}
+.getiao img {
+border: 1px solid #666666;
+margin-top: 0px;
+float: left;
+}
+.liebiao {
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-bottom-color: #CCCCCC;
+height: 0px;
+margin-top:10px;
+margin-bottom:10px;
+float: left;
+width: 90%;
+}
+.liebiao ul {
+list-style-type: none;
+display: block;
+margin: 0px;
+clear: none;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px dashed #999999;
+padding-right: 10px;
+padding-left: 10px;
+}
+.shubuno{
+float: left;
+height: 15px;
+width: 19px;
+background-color: #FFFFFF;
+border: 0px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+font-size: 13px;
+display:inline;
+}
+.shubu{
+float: left;
+height: 15px;
+width: 15px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+font-size: 13px;
+display:inline;
+}
+.shubu1{
+float: left;
+background-color: #FFFFFF;
+text-align: center;
+vertical-align: middle;
+font-size: 13px;
+margin-top:4px;
+display:inline;
+}
+.kuang {
+border: 1px solid #999999;
+}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+.green{color:#008000}
+
+a:hover {color:#000000}
+a:active {color:#000000}
+
+a{TEXT-DECORATION:none}
+.baifenbihand
+{
+float: left;
+margin-top:1px;
+display:inline;
+cursor:hand;
+cursor:pointer;
+}
+.baifenbi
+{
+float: left;
+margin-top:1px;
+display:inline;
+}
+.xiangsigif {
+float: left;
+margin-left:5px;
+display:inline;
+}
+
+.xiangsigif img {
+border: 1px solid #666666;
+float: left;
+margin-left:0px;
+margin-right:3px;
+display:inline;
+}
+
+.xiangsigif1 {
+margin-left:0px;
+display:inline;
+}
+
+.xiangsigif1 img {
+border: 1px solid #666666;
+margin-left:0px;
+margin-right:3px;
+display:inline;
+}
+
+-->
+</style>
+<script type="text/javascript">
+function showobj(objIDName) {
+objctlocal = document.getElementById('local'+objIDName);
+objctlocal.setAttribute('style', "display:block;");
+objxiangxi = document.getElementById('xiangxi' + objIDName);
+objxiangxi.setAttribute('style', "display:none;");
+objshouqi = document.getElementById('shouqi' + objIDName);
+objshouqi.setAttribute('style', "display:block;");
+
+}
+function noneobj(objIDName) {
+objctlocal = document.getElementById('local' + objIDName);
+objctlocal.setAttribute('style', "display:none;");
+objxiangxi = document.getElementById('xiangxi' + objIDName);
+objxiangxi.setAttribute('style', "display:block;");
+objshouqi = document.getElementById('shouqi' + objIDName);
+objshouqi.setAttribute('style', "display:none;");
+}
+</script>
+</head>
+<body>
+
+
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left">
+<b>
+<font color="#666666">总体信息</font></b>
+</td>
+</tr>
+
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">&nbsp;&nbsp;&nbsp;总体相似度：</font></div>
+<img src="../images/percent_1.gif" width="90" height="15"/><div class="getiao_percent"><span  class='green' >21%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">总体相似度是指本地库、互联网的综合比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">本地库相似度：</font></div>
+<img src="../images/percent_local.gif" width="90" height="15"/><div class="getiao_percent"><span  class='green' >18%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">本地库相似度是指论文与学术期刊、学位论文、会议论文的比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">互联网相似度：</font></div>
+<img src="../images/percent_net.gif" width="90" height="15"/><div class="getiao_percent"><span  class='green' >5%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">互联网相似度是指论文与互联网资源的比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">相似度计算公式&nbsp;:&nbsp;
+<font color="#666666">（句子1相似度+句子2相似度+...+句子n相似度）/&nbsp;n</font>，句子相似度范围0.0~1.0，绿色句子相似度按照0计算。
+</td>
+</tr>
+
+<tr>
+<td align="left">
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">字数<b>:</b>8427</font>&nbsp;&nbsp;
+<font color="#666666">词语数<b>:</b>2743</font>&nbsp;&nbsp;
+<font color="#666666">句子数<b>:</b>278</font>&nbsp;&nbsp;
+<font color="#666666">段落数<b>:</b>148</font>&nbsp;&nbsp;
+<font color="#666666">&nbsp;&nbsp;注：系统按照Word字数统计里面的字符数（不计空格）计算！</font>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">比对库范围<b>：</b>学术期刊（1990-2015）、学位论文（硕博库1990-2015）、会议论文（1990-2015）、互联网资源</font><br><br>
+<font color="#666666">检测报告编号<b>：</b>5735A740AC149ZK5F</font>&nbsp;&nbsp;
+<a href="http://www.paperpass.com/check" target="_blank"><b>查询真伪</b></a>
+<br><br><font color=red size=3>不支持官网（www.paperpass.com）真伪查询的检测报告均为假货，谨防上当！</font><br><br>
+</td>
+</tr>
+
+</table>
+
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" colspan="2">
+<b>
+<font color="#666666">句子信息</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<font color="#666666">
+句子个数<b>:</b>278&nbsp;&nbsp; 平均句长<b>:</b>32字&nbsp;&nbsp;
+最大句长<b>:</b>167字&nbsp;&nbsp; 最小句长<b>:</b>2字&nbsp;&nbsp;
+</font></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<img src="../images/Sentence.png" border="0">
+</td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<img src="../images/Sentence.jpg" border="0">
+</td>
+</tr>
+</table>
+
+
+<table width="100%" cellpadding="1" cellspacing="2" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" width="100%">
+<font color="#666666"><b>本地库相似资源（学术期刊、学位论文、会议论文）</font>
+</td>
+</tr>
+<tr>
+<td align="left" width="100%">
+<div class="shubu">1</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi1" style="display:block" class="baifenbihand" onclick="showobj('1')" >[详细↓]</div>
+<div id="shouqi1" style="display:none" class="baifenbihand" onclick="noneobj('1')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《计算机系统应用》 2014年10期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>兰远东 高蕾 曾少宁 曾树洪</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《半监督边缘判别嵌入与局部保持的维度约简》</div>
+
+</td>
+</tr>
+<tr id="local1" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《半监督边缘判别嵌入与局部保持的维度约简》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>兰远东 高蕾 曾少宁 曾树洪&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>惠州学院 计算机科学系,惠州,516007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>13篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P138—P141&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>4页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>惠州市科技计划(2011B020006002,2013w10,2012B020004005,2013W15,A511.0220);惠州学院校立自然科学基金(2012YB14)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《计算机系统应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2014年10期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1003-3254&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>降维 半监督学习 局部保持 分类 机器学习&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">2</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi2" style="display:block" class="baifenbihand" onclick="showobj('2')" >[详细↓]</div>
+<div id="shouqi2" style="display:none" class="baifenbihand" onclick="noneobj('2')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 湖南大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>马俊容</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《单训练样本条件下人脸识别技术研究》</div>
+
+</td>
+</tr>
+<tr id="local2" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《单训练样本条件下人脸识别技术研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>马俊容&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>胡峰松&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>湖南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>三维人脸建模 人脸识别 支持向量机 图像处理&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">3</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi3" style="display:block" class="baifenbihand" onclick="showobj('3')" >[详细↓]</div>
+<div id="shouqi3" style="display:none" class="baifenbihand" onclick="noneobj('3')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 北京工业大学 2006</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>梁永涛</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于形状预测模型的多光照人脸识别》</div>
+
+</td>
+</tr>
+<tr id="local3" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于形状预测模型的多光照人脸识别》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>梁永涛&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.4&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机应用技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>孙艳丰&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>北京工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2006&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人脸识别 形状信息 纹理信息 光照问题 支持向量回归&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">4</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi4" style="display:block" class="baifenbihand" onclick="showobj('4')" >[详细↓]</div>
+<div id="shouqi4" style="display:none" class="baifenbihand" onclick="noneobj('4')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《西安工业大学学报》 2007年5期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张宇萍</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于Fisher准则的二次线性特征提取》</div>
+
+</td>
+</tr>
+<tr id="local4" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于Fisher准则的二次线性特征提取》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张宇萍&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>西安工业大学,数理系,西安,710032&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>11篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P460—P463&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>4页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP7 O17&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《西安工业大学学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2007年5期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-5714&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>Fisher准则 线性鉴别分析 最优鉴别向量集 人脸识别&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">5</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi5" style="display:block" class="baifenbihand" onclick="showobj('5')" >[详细↓]</div>
+<div id="shouqi5" style="display:none" class="baifenbihand" onclick="noneobj('5')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《西北大学学报（自然科学版）》 2014年4期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>汝佳 陈莉 房鼎益</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种LDA和聚类融合的SVM多类分类方法》</div>
+
+</td>
+</tr>
+<tr id="local5" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种LDA和聚类融合的SVM多类分类方法》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>汝佳 陈莉 房鼎益&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>西北大学信息科学与技术学院,陕西西安,710127&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>12篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P559—P562&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>4页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家自然科学基金资助项目(61070176)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《西北大学学报（自然科学版）》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2014年4期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-274X&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 线性判别分析 模糊C均值聚类 多类分类 二叉树&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">6</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi6" style="display:block" class="baifenbihand" onclick="showobj('6')" >[详细↓]</div>
+<div id="shouqi6" style="display:none" class="baifenbihand" onclick="noneobj('6')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 东南大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>李维</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《多姿态人脸识别研究》</div>
+
+</td>
+</tr>
+<tr id="local6" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《多姿态人脸识别研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>李维&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制科学与工程;模式识别与智能系统&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>金立左&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>东南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>商图像 局部三值模式 主成分分析 人脸识别&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">7</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi7" style="display:block" class="baifenbihand" onclick="showobj('7')" >[详细↓]</div>
+<div id="shouqi7" style="display:none" class="baifenbihand" onclick="noneobj('7')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《现代计算机（专业版）》 2015年4期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>葛广为 王元亮</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《支持向量机在心脏病数据分析中的应用》</div>
+
+</td>
+</tr>
+<tr id="local7" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《支持向量机在心脏病数据分析中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>葛广为 王元亮&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>云南财经大学信息学院,昆明,650221&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>4篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P9—P10,30&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《现代计算机（专业版）》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2015年4期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1007-1423&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 分类器 心脏病诊断 交叉验证&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">8</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi8" style="display:block" class="baifenbihand" onclick="showobj('8')" >[详细↓]</div>
+<div id="shouqi8" style="display:none" class="baifenbihand" onclick="noneobj('8')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《皖西学院学报》 2012年2期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>刘琦 赵彦晖</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种改进的支持向量机及其在图像分割中的应用》</div>
+
+</td>
+</tr>
+<tr id="local8" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种改进的支持向量机及其在图像分割中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>刘琦 赵彦晖&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>西安建筑科技大学理学院,陕西西安,710055&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P52—P54&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>O123&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP1 TE1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《皖西学院学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2012年2期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1009-9735&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 距离 决策函数 一对一 分类器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">9</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi9" style="display:block" class="baifenbihand" onclick="showobj('9')" >[详细↓]</div>
+<div id="shouqi9" style="display:none" class="baifenbihand" onclick="noneobj('9')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《忻州师范学院学报》 2012年2期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>刘琦 赵彦晖</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种改进的支持向量机及其在图像分割中的应用》</div>
+
+</td>
+</tr>
+<tr id="local9" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种改进的支持向量机及其在图像分割中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>刘琦 赵彦晖&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>西安建筑科技大学,陕西西安,710055&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>7篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P15—P17&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>G43&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP1 TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《忻州师范学院学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2012年2期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1671-1491&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 距离 决策函数 一对一 分类器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">10</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi10" style="display:block" class="baifenbihand" onclick="showobj('10')" >[详细↓]</div>
+<div id="shouqi10" style="display:none" class="baifenbihand" onclick="noneobj('10')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《楚雄师范学院学报》 2012年3期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>刘琦 赵彦晖</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种改进的支持向量机及其在图像分割中的应用》</div>
+
+</td>
+</tr>
+<tr id="local10" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种改进的支持向量机及其在图像分割中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>刘琦 赵彦晖&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>西安建筑科技大学理学院,陕西西安,710055&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P14—P17&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>4页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP31&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP1 TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《楚雄师范学院学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2012年3期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1671-7406&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 距离 决策函数 一对一 分类器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">11</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi11" style="display:block" class="baifenbihand" onclick="showobj('11')" >[详细↓]</div>
+<div id="shouqi11" style="display:none" class="baifenbihand" onclick="noneobj('11')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 长春理工大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>高红</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于灰色关联分析的人脸识别技术研究》</div>
+
+</td>
+</tr>
+<tr id="local11" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于灰色关联分析的人脸识别技术研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>高红&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP317.4&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机应用技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>苏伟&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>长春理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>图像识别 人脸检测 图像处理 灰色关联分析&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">12</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi12" style="display:block" class="baifenbihand" onclick="showobj('12')" >[详细↓]</div>
+<div id="shouqi12" style="display:none" class="baifenbihand" onclick="noneobj('12')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 上海交通大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>蔡鹏演</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于人脸识别的智能安检系统研究》</div>
+
+</td>
+</tr>
+<tr id="local12" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于人脸识别的智能安检系统研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>蔡鹏演&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>软件工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>龙德清&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>上海交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人脸识别 图像预处理 特征提取 算法融合 智能安检系统&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">13</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi13" style="display:block" class="baifenbihand" onclick="showobj('13')" >[详细↓]</div>
+<div id="shouqi13" style="display:none" class="baifenbihand" onclick="noneobj('13')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《小康·财智》 2015年7期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>苏建军</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《人脸识别技术商业前景广阔》</div>
+
+</td>
+</tr>
+<tr id="local13" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《人脸识别技术商业前景广阔》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>苏建军&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P58—P60&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《小康·财智》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2015年7期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1672-4879&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">14</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi14" style="display:block" class="baifenbihand" onclick="showobj('14')" >[详细↓]</div>
+<div id="shouqi14" style="display:none" class="baifenbihand" onclick="noneobj('14')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《湿地科学》 2011年3期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张策 臧淑英 金竺 张玉红</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于支持向量机的扎龙湿地遥感分类研究》</div>
+
+</td>
+</tr>
+<tr id="local14" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于支持向量机的扎龙湿地遥感分类研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张策 臧淑英 金竺 张玉红&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>哈尔滨师范大学地理科学学院,黑龙江 哈尔滨,150025&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>18篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>5次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P263—P269&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP751.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP1 TE1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《湿地科学》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2011年3期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1672-5948&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>扎龙国家级自然保护区 支持向量机 湿地遥感分类 样本数量 特征维度&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">15</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi15" style="display:block" class="baifenbihand" onclick="showobj('15')" >[详细↓]</div>
+<div id="shouqi15" style="display:none" class="baifenbihand" onclick="noneobj('15')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 重庆大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张雪君</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种改进支持向量机的中长期负荷预测方法》</div>
+
+</td>
+</tr>
+<tr id="local15" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种改进支持向量机的中长期负荷预测方法》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张雪君&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM715&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>电气工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>陈刚&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>重庆大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电力系统 负荷预测 中长期负荷 支持向量机 粒子群优化算法 粗糙集理论 属性约简&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">16</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi16" style="display:block" class="baifenbihand" onclick="showobj('16')" >[详细↓]</div>
+<div id="shouqi16" style="display:none" class="baifenbihand" onclick="noneobj('16')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《工业控制计算机》 2015年11期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>罗初发</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于三轴加速度传感器的人体动作识别研究》</div>
+
+</td>
+</tr>
+<tr id="local16" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于三轴加速度传感器的人体动作识别研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>罗初发&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>广东第二师范学院物理系,广东 广州,510303&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>7篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P31—P32&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>2页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>2015年度国家级大学生创新创业训练计划项目“基于三轴加速度传感器的人体动作识别研究资助(1427815037)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《工业控制计算机》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2015年11期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1001-182X&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人体动作识别 阈值 加速度传感器 特征提取&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">17</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi17" style="display:block" class="baifenbihand" onclick="showobj('17')" >[详细↓]</div>
+<div id="shouqi17" style="display:none" class="baifenbihand" onclick="noneobj('17')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 江苏科技大学 2013</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>杨姝</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于单视图的多姿态人脸识别》</div>
+
+</td>
+</tr>
+<tr id="local17" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于单视图的多姿态人脸识别》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>杨姝&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张尤赛&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>江苏科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2013&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>多姿态人脸识别 支持向量机 主成分分析法 局部加权平均法 特征提取&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">18</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi18" style="display:block" class="baifenbihand" onclick="showobj('18')" >[详细↓]</div>
+<div id="shouqi18" style="display:none" class="baifenbihand" onclick="noneobj('18')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《地理与地理信息科学》 2014年4期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>董承玮 芮小平 邓羽 关兴良 李峰</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于空间自相关的支持向量机空间聚类研究》</div>
+
+</td>
+</tr>
+<tr id="local18" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于空间自相关的支持向量机空间聚类研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>董承玮 芮小平 邓羽 关兴良 李峰&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>北京市测绘设计研究院,北京,100038；中国科学院大学资源与环境学院,北京,100049；中国科学院地理科学与资源研究所,北京,100101；全国市长研修学院,北京,100029；防灾科技学院,河北三河,065201&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>24篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P36—P41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>6页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>P208&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>F29 P20&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家自然科学基金项目(40901191);中央高校基本科研业务费资助项目(ZD20140203);河北省高等学校科学研究计划(ZD20140203)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《地理与地理信息科学》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2014年4期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - CSSCI - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1672-0504&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 空间自相关 空间聚类 降维 主成分分析 非线性映射&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">19</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi19" style="display:block" class="baifenbihand" onclick="showobj('19')" >[详细↓]</div>
+<div id="shouqi19" style="display:none" class="baifenbihand" onclick="noneobj('19')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 大连理工大学 2004</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>李庆国</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《水文水资源系统计算智能评价与预测方法研究》</div>
+
+</td>
+</tr>
+<tr id="local19" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《水文水资源系统计算智能评价与预测方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>李庆国&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>P333.9&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>水文学及水资源&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>周惠成&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>大连理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2004&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>水资源评价 计算智能 模糊性 模糊模式识别 神经网络 模糊优选神经网络 模糊聚类神经网络 智能预测 地理信息系统 支持向量机&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">20</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi20" style="display:block" class="baifenbihand" onclick="showobj('20')" >[详细↓]</div>
+<div id="shouqi20" style="display:none" class="baifenbihand" onclick="noneobj('20')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 中南民族大学 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>唐小平</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于核方法和零空间的人脸识别算法的研究》</div>
+
+</td>
+</tr>
+<tr id="local20" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于核方法和零空间的人脸识别算法的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>唐小平&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机应用技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>王文涛&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>中南民族大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>核方法 零空间 人脸识别 图像预处理 特征提取&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">21</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi21" style="display:block" class="baifenbihand" onclick="showobj('21')" >[详细↓]</div>
+<div id="shouqi21" style="display:none" class="baifenbihand" onclick="noneobj('21')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 北京工业大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>于瑛英</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《SVM数据提取与聚类分类方法研究》</div>
+
+</td>
+</tr>
+<tr id="local21" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《SVM数据提取与聚类分类方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>于瑛英&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP181&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>运筹学与控制论&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>薛毅&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>北京工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>聚类分类 马氏距离 数据提取 支持向量机&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">22</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi22" style="display:block" class="baifenbihand" onclick="showobj('22')" >[详细↓]</div>
+<div id="shouqi22" style="display:none" class="baifenbihand" onclick="noneobj('22')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《计算机仿真》 2005年12期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>楼安平 杨新</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于偏最小二乘法与支持向量机的人脸识别》</div>
+
+</td>
+</tr>
+<tr id="local22" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于偏最小二乘法与支持向量机的人脸识别》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>楼安平 杨新&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>上海交通大学图象处理与模式识别研究所,上海,200030&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>6篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>2次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P166—P168&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP2 TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《计算机仿真》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2005年12期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1006-9348&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人脸识别 偏最小二乘 支持向量机&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">23</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi23" style="display:block" class="baifenbihand" onclick="showobj('23')" >[详细↓]</div>
+<div id="shouqi23" style="display:none" class="baifenbihand" onclick="noneobj('23')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 华中科技大学 2014</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张敏</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于主轴电机电流信号的铣刀磨损状态定量监测》</div>
+
+</td>
+</tr>
+<tr id="local23" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于主轴电机电流信号的铣刀磨损状态定量监测》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张敏&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TG714&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>刘红奇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>华中科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2014&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>铣刀 磨损状态 定量监测 主轴电机电流信号&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">24</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi24" style="display:block" class="baifenbihand" onclick="showobj('24')" >[详细↓]</div>
+<div id="shouqi24" style="display:none" class="baifenbihand" onclick="noneobj('24')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《军民两用技术与产品》 2005年9期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张鸽 陈书开</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于SVM的手写体阿拉伯数字识别》</div>
+
+</td>
+</tr>
+<tr id="local24" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于SVM的手写体阿拉伯数字识别》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张鸽 陈书开&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>长沙理工大学计算机与通讯工程学院,长沙,410076&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P41—P43&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 TP2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《军民两用技术与产品》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2005年9期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1009-8119&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>SVM 核函数 穿越次数特征 粗网格特征 密度特征&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">25</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi25" style="display:block" class="baifenbihand" onclick="showobj('25')" >[详细↓]</div>
+<div id="shouqi25" style="display:none" class="baifenbihand" onclick="noneobj('25')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 中国林业科学研究院 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王维枫</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《山杏常见叶部病虫害图像识别技术研究》</div>
+
+</td>
+</tr>
+<tr id="local25" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《山杏常见叶部病虫害图像识别技术研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王维枫&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>1次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>S436.6&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>森林经理学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>王雪峰&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>中国林业科学研究院&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>山杏 叶部病虫害 图像识别 颜色特征 支持向量机&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">26</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi26" style="display:block" class="baifenbihand" onclick="showobj('26')" >[详细↓]</div>
+<div id="shouqi26" style="display:none" class="baifenbihand" onclick="noneobj('26')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 桂林电子科技大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>范浩</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于支持向量机模型的优化算法研究》</div>
+
+</td>
+</tr>
+<tr id="local26" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于支持向量机模型的优化算法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>范浩&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>O224&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算数学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>朱志斌&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>桂林电子科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 共轭梯度法 原始-对偶路径跟踪法 优化算法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">27</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi27" style="display:block" class="baifenbihand" onclick="showobj('27')" >[详细↓]</div>
+<div id="shouqi27" style="display:none" class="baifenbihand" onclick="noneobj('27')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>会议论文  2007-09-01</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>钟绍俊 孙坚 徐红伟 富雅琼 陈乐</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《支持向量机在电子体温计字符识别中的应用研究》</div>
+
+</td>
+</tr>
+<tr id="local27" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>会议论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《支持向量机在电子体温计字符识别中的应用研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>钟绍俊 孙坚 徐红伟 富雅琼 陈乐&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>中国计量学院 杭州 310018&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议名称<b>：</b></font>第五届全国温度测量与控制技术学术会议&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">主办单位<b>：</b></font>中国物理学会&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议时间<b>：</b></font>2007-09-01&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议地点<b>：</b></font>桂林&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 电子体温计 字符识别&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">28</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi28" style="display:block" class="baifenbihand" onclick="showobj('28')" >[详细↓]</div>
+<div id="shouqi28" style="display:none" class="baifenbihand" onclick="noneobj('28')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 南京信息工程大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>袁祖霞</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于高分辨力一维距离像雷达对海目标探测识别研究》</div>
+
+</td>
+</tr>
+<tr id="local28" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于高分辨力一维距离像雷达对海目标探测识别研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>袁祖霞&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TN959.17&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>高贵明&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>南京信息工程大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电磁散射 雷达目标识别 特征提取 一维距离像 支持向量机&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">29</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi29" style="display:block" class="baifenbihand" onclick="showobj('29')" >[详细↓]</div>
+<div id="shouqi29" style="display:none" class="baifenbihand" onclick="noneobj('29')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《信息与控制》 2007年1期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>武小红 周建江</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一种基于类中心最大间隔的支持向量机》</div>
+
+</td>
+</tr>
+<tr id="local29" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一种基于类中心最大间隔的支持向量机》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>武小红 周建江&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>南京航空航天大学信息科学与技术学院,江苏,南京,210016；江苏大学电气信息工程学院,江苏,镇江,212013；南京航空航天大学信息科学与技术学院,江苏,南京,210016&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>10篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>1次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P63—P67&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>5页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 TP1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>解放军总装备部预研项目(413030201)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《信息与控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2007年1期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1002-0411&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 分类超平面 核方法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">30</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi30" style="display:block" class="baifenbihand" onclick="showobj('30')" >[详细↓]</div>
+<div id="shouqi30" style="display:none" class="baifenbihand" onclick="noneobj('30')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 北京工业大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>唐满</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《支撑向量回归中的样本简化及加权回归方法》</div>
+
+</td>
+</tr>
+<tr id="local30" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《支撑向量回归中的样本简化及加权回归方法》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>唐满&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP181&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机科学与技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张鸿宾&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>北京工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">31</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi31" style="display:block" class="baifenbihand" onclick="showobj('31')" >[详细↓]</div>
+<div id="shouqi31" style="display:none" class="baifenbihand" onclick="noneobj('31')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 扬州大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>崔美琳</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《分块鉴别特征抽取及人脸识别应用研究》</div>
+
+</td>
+</tr>
+<tr id="local31" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《分块鉴别特征抽取及人脸识别应用研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>崔美琳&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机应用技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>陈才扣&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>扬州大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人脸识别 分块鉴别 特征抽取&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">32</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi32" style="display:block" class="baifenbihand" onclick="showobj('32')" >[详细↓]</div>
+<div id="shouqi32" style="display:none" class="baifenbihand" onclick="noneobj('32')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 解放军信息工程大学 2006</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>郭娟</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《人脸识别方法研究与实现》</div>
+
+</td>
+</tr>
+<tr id="local32" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《人脸识别方法研究与实现》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>郭娟&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.41&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>戚文芽&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>解放军信息工程大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2006&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>人脸识别 主分量分析 特征抽取 模式识别 算机视觉&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">33</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi33" style="display:block" class="baifenbihand" onclick="showobj('33')" >[详细↓]</div>
+<div id="shouqi33" style="display:none" class="baifenbihand" onclick="noneobj('33')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《光谱学与光谱分析》 2013年3期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>刘庆杰 荆林海 王梦飞 蔺启忠</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于克隆选择支持向量机高光谱遥感影像分类技术》</div>
+
+</td>
+</tr>
+<tr id="local33" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于克隆选择支持向量机高光谱遥感影像分类技术》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>刘庆杰 荆林海 王梦飞 蔺启忠&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>中国科学院对地观测与数字地球科学中心,北京100094；中国科学院数字地球重点实验室,北京100094；中国国土资源航空物探遥感中心,北京,100083&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>14篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P746—P751&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>6页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP751.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 TP1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家自然科学基金项目(41001266);国家(973计划)项目(2009CB723900);国家科技支撑项目(2012BAH27B05,2012BAC16B01,2012BAH33F02)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《光谱学与光谱分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2013年3期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU - SCI&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-0593&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>高光谱 支持向量机 核参数选择 克隆选择 网格搜索 分类&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">34</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi34" style="display:block" class="baifenbihand" onclick="showobj('34')" >[详细↓]</div>
+<div id="shouqi34" style="display:none" class="baifenbihand" onclick="noneobj('34')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西北工业大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>吕竟雷</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于支持向量机的P300脑电信号分类研究》</div>
+
+</td>
+</tr>
+<tr id="local34" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于支持向量机的P300脑电信号分类研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>吕竟雷&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391.9&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>田梦君&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西北工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>脑机接口 P300 支持向量机 模式识别&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">35</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi35" style="display:block" class="baifenbihand" onclick="showobj('35')" >[详细↓]</div>
+<div id="shouqi35" style="display:none" class="baifenbihand" onclick="noneobj('35')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 上海大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>纪晓波</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《支持向量机用于化合物构效关系的研究》</div>
+
+</td>
+</tr>
+<tr id="local35" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《支持向量机用于化合物构效关系的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>纪晓波&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP274&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>物理化学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>陆文聪&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>上海大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>数据挖掘 支持向量分类 支持向量回归 化合物构效关系&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">36</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi36" style="display:block" class="baifenbihand" onclick="showobj('36')" >[详细↓]</div>
+<div id="shouqi36" style="display:none" class="baifenbihand" onclick="noneobj('36')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 南京邮电大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>罗红旗</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于聚类和支持向量机的数据挖掘方法研究》</div>
+
+</td>
+</tr>
+<tr id="local36" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于聚类和支持向量机的数据挖掘方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>罗红旗&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP311.13&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>模式识别与智能系统&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>李雷&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>南京邮电大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>数据挖掘 聚类算法 支持向量机 模糊C均值 分类精度&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">37</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi37" style="display:block" class="baifenbihand" onclick="showobj('37')" >[详细↓]</div>
+<div id="shouqi37" style="display:none" class="baifenbihand" onclick="noneobj('37')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 东南大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王雷</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《支持向量机及其在汽轮机组性能监测和故障诊断中的应用研究》</div>
+
+</td>
+</tr>
+<tr id="local37" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《支持向量机及其在汽轮机组性能监测和故障诊断中的应用研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王雷&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP277&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>热能工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>徐治皋&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>东南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>发电厂 汽轮机组 支持向量机 性能监测 时间序列预测 故障诊断&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">38</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi38" style="display:block" class="baifenbihand" onclick="showobj('38')" >[详细↓]</div>
+<div id="shouqi38" style="display:none" class="baifenbihand" onclick="noneobj('38')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 哈尔滨工程大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>孙丽娟</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于支持向量机的高光谱图像分类技术研究》</div>
+
+</td>
+</tr>
+<tr id="local38" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于支持向量机的高光谱图像分类技术研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>孙丽娟&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP181&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>王立国&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>哈尔滨工程大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>高光谱图像 图像分类算法 支持向量机方法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">39</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi39" style="display:block" class="baifenbihand" onclick="showobj('39')" >[详细↓]</div>
+<div id="shouqi39" style="display:none" class="baifenbihand" onclick="noneobj('39')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 北京交通大学 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>安高云</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《复杂条件人脸识别中若干关键问题的研究》</div>
+
+</td>
+</tr>
+<tr id="local39" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《复杂条件人脸识别中若干关键问题的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>安高云&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP301.6&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>阮秋琦&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>北京交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>模式识别 人脸识别 特征提取 子空间分析 偏微分方程 全变分模型 监督算法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">40</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi40" style="display:block" class="baifenbihand" onclick="showobj('40')" >[详细↓]</div>
+<div id="shouqi40" style="display:none" class="baifenbihand" onclick="noneobj('40')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 湖南大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张勇</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于支持向量机和混沌理论的压缩机状态预测方法研究》</div>
+
+</td>
+</tr>
+<tr id="local40" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于支持向量机和混沌理论的压缩机状态预测方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张勇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>O415.5&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>于德介&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>湖南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>支持向量机 混沌理论 压缩机 状态预测 非线性时间序列&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">41</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi41" style="display:block" class="baifenbihand" onclick="showobj('41')" >[详细↓]</div>
+<div id="shouqi41" style="display:none" class="baifenbihand" onclick="noneobj('41')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 华北水利水电学院 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>乔明叶</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于生态城市建设的水资源承载力与生态环境质量研究》</div>
+
+</td>
+</tr>
+<tr id="local41" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于生态城市建设的水资源承载力与生态环境质量研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>乔明叶&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>X321&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>水文学及水资源&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>周振民&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>华北水利水电学院&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>城市建设 水资源 生态承载力 评价指标体系 多元统计&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">42</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi42" style="display:block" class="baifenbihand" onclick="showobj('42')" >[详细↓]</div>
+<div id="shouqi42" style="display:none" class="baifenbihand" onclick="noneobj('42')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>会议论文  2013-04-27</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>冯琳</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于主成分分析法的“蓝黄两区”的金融生态评价研究》</div>
+
+</td>
+</tr>
+<tr id="local42" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>会议论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于主成分分析法的“蓝黄两区”的金融生态评价研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>冯琳&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>济南大学经济学院 山东济南250002&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>U49 F12&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议名称<b>：</b></font>第二届中国公司金融论坛&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">主办单位<b>：</b></font>济南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议时间<b>：</b></font>2013-04-27&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议地点<b>：</b></font>济南&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>蓝黄两区 金融生态 主成分分析&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">43</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi43" style="display:block" class="baifenbihand" onclick="showobj('43')" >[详细↓]</div>
+<div id="shouqi43" style="display:none" class="baifenbihand" onclick="noneobj('43')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《科学与财富》 2010年11期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>郑意 宋述刚</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《我国主要地区(城市)水质污染情况的主成分分析》</div>
+
+</td>
+</tr>
+<tr id="local43" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《我国主要地区(城市)水质污染情况的主成分分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>郑意 宋述刚&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>湖北荆州市长江大学信息与数学学院&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P27—P28&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>X8&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>R47 R12&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《科学与财富》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2010年11期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1671-2226&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>主成分分析 spss软件 水质&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">44</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi44" style="display:block" class="baifenbihand" onclick="showobj('44')" >[详细↓]</div>
+<div id="shouqi44" style="display:none" class="baifenbihand" onclick="noneobj('44')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《新疆农业科学》 2009年5期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>谷新保 虎胆·吐马尔白 翟永先 阿里甫·买买提 孟杰 曹伟</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《主成分分析法在膜下滴灌不同年限棉田土壤表层盐渍化评价中的应用》</div>
+
+</td>
+</tr>
+<tr id="local44" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《主成分分析法在膜下滴灌不同年限棉田土壤表层盐渍化评价中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>谷新保 虎胆·吐马尔白 翟永先 阿里甫·买买提 孟杰 曹伟&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>新疆农业大学,乌鲁木齐,830052；克孜勒苏州水利水电勘测设计院,新疆阿图什,845350；新疆水利厅牧区水利规划总站,乌鲁木齐,830000；新疆水利水电科学研究院,乌鲁木齐,830049&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>9篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P935—P940&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>6页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>S114&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>U49 S15&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家自然科学基金(50669007);新疆维吾尔自治区自然科学基金(200821172);国家科技攻关重大专项项目(2007BAD38B01);新疆维吾尔自治区科技攻关重大专项(200731137-1);新疆水利水电工程重点学科基金(XJZDXK2002-10-05)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《新疆农业科学》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2009年5期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1001-4330&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>主成成分分析 膜下滴灌 不同年限 盐渍化评价&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">45</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi45" style="display:block" class="baifenbihand" onclick="showobj('45')" >[详细↓]</div>
+<div id="shouqi45" style="display:none" class="baifenbihand" onclick="noneobj('45')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 南开大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>卓宇</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《我国保险集团资源整合研究——基于资产负债管理的视角》</div>
+
+</td>
+</tr>
+<tr id="local45" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《我国保险集团资源整合研究——基于资产负债管理的视角》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>卓宇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>F842.3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>保险学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>朱铭来&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>南开大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">46</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi46" style="display:block" class="baifenbihand" onclick="showobj('46')" >[详细↓]</div>
+<div id="shouqi46" style="display:none" class="baifenbihand" onclick="noneobj('46')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 河北农业大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张园园</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《河北省建设用地节约集约控制指标研究》</div>
+
+</td>
+</tr>
+<tr id="local46" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《河北省建设用地节约集约控制指标研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张园园&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>F299.232&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>土地资源管理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张利&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>河北农业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>建设用地 节约集约 控制指标 动态管理 测算方法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">47</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi47" style="display:block" class="baifenbihand" onclick="showobj('47')" >[详细↓]</div>
+<div id="shouqi47" style="display:none" class="baifenbihand" onclick="noneobj('47')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 南京理工大学 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>梁田</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《南京经济技术开发区可持续发展能力研究》</div>
+
+</td>
+</tr>
+<tr id="local47" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《南京经济技术开发区可持续发展能力研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>梁田&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>F127.9&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>工商管理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>程龙生&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>南京理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>经济技术开发区 可持续发展 南京&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">48</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi48" style="display:block" class="baifenbihand" onclick="showobj('48')" >[详细↓]</div>
+<div id="shouqi48" style="display:none" class="baifenbihand" onclick="noneobj('48')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 山东大学 2013</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>刘瑜</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于葡萄酒品基础数据的综合分析系统设计与实现》</div>
+
+</td>
+</tr>
+<tr id="local48" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于葡萄酒品基础数据的综合分析系统设计与实现》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>刘瑜&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TS261.7&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>软件工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>史清华&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>山东大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2013&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>葡萄酒品质 质量测量 单因素方差分析 置信区间法 回归预测模型&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">49</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi49" style="display:block" class="baifenbihand" onclick="showobj('49')" >[详细↓]</div>
+<div id="shouqi49" style="display:none" class="baifenbihand" onclick="noneobj('49')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 山东大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>陈祥利</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《统计套利理论及策略开发应用研究》</div>
+
+</td>
+</tr>
+<tr id="local49" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《统计套利理论及策略开发应用研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>陈祥利&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>F832.51&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>金融数学与金融工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>陈增敬&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>山东大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>统计套利 GARCH模型 相空间重构 支持向量机 投资策略&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">50</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi50" style="display:block" class="baifenbihand" onclick="showobj('50')" >[详细↓]</div>
+<div id="shouqi50" style="display:none" class="baifenbihand" onclick="noneobj('50')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《南京理工大学学报》 2002年3期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>束婷婷 甘岚 杨静宇</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《求解统计不相关的最佳鉴别矢量的统一算法》</div>
+
+</td>
+</tr>
+<tr id="local50" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《求解统计不相关的最佳鉴别矢量的统一算法》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>束婷婷 甘岚 杨静宇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>南京理工大学计算机科学与技术系,南京,210094；华东交通大学计算机学院,南昌,330013,&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>9篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>5次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P290—P294&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>5页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 O35&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家自然科学基金(60072034)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《南京理工大学学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2002年3期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1005-9830&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>最佳鉴别矢量,统计不相关,模式识别 人脸识别&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr><td align="left" width="100%"><font color="#666666">……</font></td></tr><tr>
+
+</table>
+
+<table width="100%" cellpadding="1" cellspacing="2" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" width="100%">
+<font color="#666666"><b>互联网相似资源</b></font>
+</td>
+</tr>
+<tr>
+<td align="left" width="100%">
+<div class="shubu">1</div>
+<div class="xiangsigif"><img src="../images/4.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >4</span></span><font color="#666666">%</font></div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>互联网</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">标题<b>:</b></font>《LBP算子介绍_Paul_新浪博客》</div>
+<div class="baifenbi"><img src="../images/htm.gif">&nbsp;</div>
+<div class="baifenbi"><a target='_blank' href=http://blog.sina.com.cn/s/blog_48ce1c2d0101b4us.html>查看网页</a></div>
+</td>
+</tr>
+<tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">2</div>
+<div class="xiangsigif"><img src="../images/3.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >3</span></span><font color="#666666">%</font></div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>互联网</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">标题<b>:</b></font>《线性判别分析（Linear Discriminant Analysi...》</div>
+<div class="baifenbi"><img src="../images/htm.gif">&nbsp;</div>
+<div class="baifenbi"><a target='_blank' href=http://www.faceye.net/search/89806.html>查看网页</a></div>
+</td>
+</tr>
+<tr>
+
+
+</table>
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" colspan="2">
+<b>
+<font color="#666666">如何识别假冒的检测报告？</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<font color="#666666">
+一：比对库只有网络资源的均为假货，正品检测报告都是经过大数据量的本地库
+（9000万篇学术期刊和学位论文）详细比对生成，检测结果有详细的期刊和学位论文出处。假的检测报告用网络比对结果坑害消费者，导致其论文最终没有通过审核。<br><br>
+
+二：不支持官网真伪验证（<a href="http://www.paperpass.com/check" target="_blank">http://www.paperpass.com/check</a>）的均为假货。<br><br>
+
+三：请认准PaperPass这个名称，有的假冒检测报告用以Paper开头的其他名称迷惑消费者。<br><br>
+
+真诚希望您能够将此信息转告您的朋友和同学，以防被骗！
+</font></td>
+</tr>
+</table>
+
+
+<div style="margin-bottom:100px"></div>
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2016 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>

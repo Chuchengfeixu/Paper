@@ -1,0 +1,53 @@
+pca 50: 78.5 79 80 78.5 80 81 79.5 77 76.5 78.5
+pca 70: 88.333 ~ 84.167 86.667 93.333 87.5 90.833 88.333 87.5 86.667
+
+src 50：96 92 94 95.5 95 95.5 94.5 91.5 95 91
+src 70: 95 95.833 97.5 96.667 ~ 93.33 95 97.5 95.833 92.5
+
+
+datasets:
+ar: 	       100人 每人20张 共2000张图片 表情，光线
+extendedyaleB: 38人  每人64张 共2432张图片 光线
+orl:	       40人  每人10张 共400张图片  角度，表情
+
+
+Results on database [AR]:
+	average accuracy of ' pca' for tests: [86.695%]
+	average accuracy of ' SRC' for tests: [86.412%]
+        average accuracy of ' LDA' for tests: [86.150%]
+	average accuracy of ' GSRC' for tests: [86.981%]
+	average accuracy of ' GSRC2' for tests: [88.698%]
+Results on database [ORL]:
+	average accuracy of ' pca' for tests: [81.000%]
+	average accuracy of ' SRC' for tests: [92.000%]
+        average accuracy of ' LDA' for tests: [82.450%]
+ 	average accuracy of ' GSRC' for tests: [93.050%]
+	average accuracy of ' GSRC2' for tests: [93.150%]
+Results on database [ExtendedYaleB]:
+	average accuracy of ' pca' for tests: [93.416%]
+	average accuracy of ' SRC' for tests: [94.897%]
+        average accuracy of ' LDA' for tests: [84.360%]
+ 	average accuracy of ' GSRC' for tests: [94.815%]
+	average accuracy of ' GSRC2' for tests: [95.556%]
+
+results on dataset [ORL]:
+	average accuracy of [           GSRC] on [10] tests: [91.050%]
+results on dataset [AR]:
+	average accuracy of [           GSRC] on [10] tests: [81.159%]
+results on dataset [ExtendedYaleB]:
+	average accuracy of [           GSRC] on [10] tests: [68.749%]
+
+results on dataset [ORL]:
+	average accuracy of [           GSRC] on [10] tests: [91.150%]
+results on dataset [AR]:
+	average accuracy of [           GSRC] on [10] tests: [80.887%]
+results on dataset [ExtendedYaleB]:
+	average accuracy of [           GSRC] on [10] tests: [69.547%]
+
+results on dataset [AR]:
+	average accuracy of [SRC] on [10] tests: [88.412%]
+results on dataset [ORL]:
+	average accuracy of [SRC] on [10] tests: [92.000%]
+results on dataset [ExtendedYaleB]:
+	average accuracy of [SRC] on [10] tests: [87.819%]
+>> 

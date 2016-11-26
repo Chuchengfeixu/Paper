@@ -1,0 +1,40 @@
+Accuracy (%)
+Dataset, ATT, IFD, 
+lda, 94.4, 86.3, 
+pca, 91.3, 74.2, 
+
+Training Time (ms/img)
+Dataset, ATT, IFD, 
+lda, 1.7, 0.2, 
+pca, 1.9, 0.1, 
+
+Testing Time (ms/img)
+Dataset, ATT, IFD, 
+lda, 0.1, 0.1, 
+pca, 0.6, 0.1, 
+
+Total Execution Time (ms/img)
+Dataset, ATT, IFD, 
+lda, 1.8, 0.3, 
+pca, 2.5, 0.2, 
+
+Training Memory (MB)
+Dataset, ATT, IFD, 
+lda, -1.0, -1.0, 
+pca, -1.0, -1.0, 
+
+Testing Memory (MB)
+Dataset, ATT, IFD, 
+lda, -1.0, -1.0, 
+pca, -1.0, -1.0, 
+
+Total Memory (MB)
+Dataset, ATT, IFD, 
+lda, -2.0, -2.0, 
+pca, -2.0, -2.0, 
+
+Model Size (MB)
+Dataset, ATT, IFD, 
+lda, 0.3, 0.4, 
+pca, 0.3, 0.5, 
+

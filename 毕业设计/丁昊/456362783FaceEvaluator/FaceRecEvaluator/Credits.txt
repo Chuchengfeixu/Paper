@@ -1,0 +1,45 @@
+The Face Recognition Evaluator Toolbox for MATLAB uses a lot of very useful libraries/code/data from a number of different places. Here I give credit and attempt to link back to all the resources I have used to create this package. To the best of my knowledge, my inclusion of these great resources is allowed, please contact me if you wish me not to redistrubte them.
+
+
+strsplit.m
+	Peter J. Acklam
+	http://home.online.no/~pjacklam
+
+timetic.m
+	David Gleich
+	http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=12422&objectType=FILE
+	
+ccipca.m
+	Juyang Weng
+	www.cse.msu.edu/~weng/research/
+
+LDA
+	Alan Brooks (in collaboration with Li Gao) 
+	http://dailyburrito.com/projects/facerecog/FaceRecReport.html
+
+ILDA
+	Tae-Kyun Kim
+	http://svr-www.eng.cam.ac.uk/~tkk22/code.htm
+	
+FastICA
+	http://www.cis.hut.fi/projects/ica/fastica/
+
+LIBSVM
+	www.csie.ntu.edu.tw/~cjlin/libsvm/
+
+ICA
+	Marian Stewart Bartlett
+	http://www.cnl.salk.edu/~marni/icaPapers.html
+	
+L1-MAGIC
+	http://www.acm.caltech.edu/l1magic/
+
+ISVMs
+	Chris Diehl
+	http://biology.ucsd.edu/~gert/svm/incremental/
+
+ATT Database of Faces
+	http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html
+
+IFD (Indian Face Database)
+	http://vis-www.cs.umass.edu/~vidit/IndianFaceDatabase/
